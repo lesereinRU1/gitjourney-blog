@@ -21,3 +21,7 @@ def show_post(name):
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+@app.route('/about')
+def about():
+    return '<h1>About this blog</h1>'
