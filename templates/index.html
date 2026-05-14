@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>GitJourney Blog</title></head>
+<body>
+  <h1>GitJourney Blog</h1>
+  <ul>
+  {% for post in posts %}
+    <li><a href="/post/{{ post|lower }}">{{ post }}</a></li>
+  {% endfor %}
+  </ul>
+</body>
+</html>
